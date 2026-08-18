@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="left">
-        <div class="logo"> logo
+        <div class="logo">
         </div>
         <p>
             Photo by <a href="https://unsplash.com/@jrzt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Zulki Jrzt </a>
@@ -16,24 +16,55 @@
         </p>
     </div>
     <div class="right">
-        <div class="top">top</div>
-        <div class="middle">middle
-            <form>
-                <fieldset>
-                    <div class="first-and-last-name">
-                        <label for="first-name">Frist name: </label>
-                        <input type="text" id="first-name" name="first-name">
-                        <label for="last-name">Last name: </label>
-                        <input type="text" id="last-name" name="last-name">
+        <div class="top">
+            With just a few clicks, you can find the fastest routes, discover cool places nearby, and avoid making accidental "scenic detours" that last hours. Whether you're heading to a restaurant, school, or somewhere completely new, this map website saves time, reduces stress, and helps you arrive to you destination!
+        </div>
+        <div class="middle">
+            <form class="sign-up">
+                <fieldset id="top">
+                    <h1>Let's sign you up!</h1>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="first-name">First name:*</label>
+                            <input type="text" id="first-name" minlength="2" pattern="[A-Za-z]+" name="first-name" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="last-name">Last name:*</label>
+                            <input type="text" id="last-name" minlength="2" pattern="[A-Za-z]+" name="last-name" required>
+                        </div>
                     </div>
-                    <div>
-                        <label for="age">Age: </label>
-                        <input type="number" id="age" name="age">
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email:*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="phoneNumber">Phone number:</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
                     </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="password">Password:*</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="bottom">
+                    <button>Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
                 </fieldset>
             </form>
         </div>
-        <div class="bottom">bottom</div>
     </div>
     
 </body>

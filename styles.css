@@ -20,9 +20,13 @@ body {
 }
 
 .left .logo {
-    margin: auto 0 auto 0;
-    height: 40px;
-    background-color: aqua;
+    margin: auto;
+    height: 330px;
+    width: 200px;
+    background-image: url(./images/odin-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .right {
@@ -36,14 +40,69 @@ body {
     display: flex;
     flex: 1;
     align-items: center;
+    padding: 0 48px 0 48px;
+
+    background-color: rgb(187, 201, 201);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
 }
 
 .right .middle {
-    flex: 2;
+    flex: 4.5;
+    background-color: rgb(214, 214, 214);
 }
 
-.right .bottom {
+.middle .sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.sign-up #top {
+    flex: 3;
+}
+
+.sign-up #bottom {
     flex: 1;
+}
+
+.form-row {
+    display: flex;
+    gap: 18px;
+    
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input {
+    width: 220px;
+    padding: 8px 10px;
+
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    font-size: 16px;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-color: #4a7db5;
+
+    box-shadow: 0 0 4px rgba(74, 125, 181, 0.4);
+}
+
+.form-field input:user-valid {
+    border-color: green;
+}
+
+.form-field input:user-invalid {
+    border-color: crimson;
 }
 
 
