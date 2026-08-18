@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: url("./images/left-background-color.jpg");
+    background-size: cover;
+}
+
+.left p,
+.left a {
+    color: aliceblue;
+    margin: 0 0 0 auto;
+    
+}
+
+.left .logo {
+    margin: auto 0 auto 0;
+    height: 40px;
+    background-color: aqua;
+}
+
+.right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.right .top {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.right .middle {
+    flex: 2;
+}
+
+.right .bottom {
+    flex: 1;
+}
+
+
+
